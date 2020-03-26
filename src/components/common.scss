@@ -1092,6 +1092,11 @@ textarea:focus{
   display: none;
 }
 
+.delivery-nav-button__checked{
+  background-color: rgba(112, 187, 220, 0.2);
+  font-weight: bold;
+}
+
 @import "./header/header";
 
 @import "./category-product/category-product";
@@ -1103,4 +1108,6 @@ textarea:focus{
 
 @import "./modal-form/modal-form";
 @import "./slider/slider";
+
+@import "./delivery-nav-button/delivery-nav-button"
 

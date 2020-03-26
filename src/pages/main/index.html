@@ -18,24 +18,30 @@
       "title-class":"category-product__title"
     })
     <section class="delivery-block">
-      <img src="/../../static/images/delivery-image.jpg" alt="woman photo" class="delivery-block-photo">
-      <article class="delivery-article-block">
-        <h2 class="section-title delivery-section-title">Delivery</h2>
-        <ul class="delivery-nav-list">
-          <li class="delivery-nav-item">
-            <button class="delivery-nav-button delivery-nav-button__checked">Delivery</button>
+      <img src="/../../static/images/delivery-image.jpg" alt="woman photo" class="delivery-block__photo">
+      <article class="delivery-block__article">
+        <h2 class="section-title delivery-block__article-title">Delivery</h2>
+        <ul class="delivery-block__article-nav-list">
+          <li class="delivery-block__article-nav-item">
+            @@include('delivery-nav-button',{
+              "delivery-button-text":"delivery"
+            })
           </li>
-          <li class="delivery-nav-item">
-            <button class="delivery-nav-button">Guarantee</button>
+          <li class="delivery-block__nav-item">
+            @@include('delivery-nav-button',{
+              "delivery-button-text":"Guarantee"
+            })
           </li>
-          <li class="delivery-nav-item">
-            <button class="delivery-nav-button">Credit</button>
+          <li class="delivery-block__nav-item">
+            @@include('delivery-nav-button',{
+              "delivery-button-text":"Credit"
+            })
           </li>
         </ul>
-        <div class="delivery-text-block">
-          <p class="delivery-text">Some days i feel like i've been working on dlk my entire life and there are
+        <div class="delivery-block__text-block">
+          <p class="delivery-block__text">Some days i feel like i've been working on dlk my entire life and there are
             other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-          <p class="delivery-text">What started as an outlet to deal with the traumatic loss of my husband,
+          <p class="delivery-block__text">What started as an outlet to deal with the traumatic loss of my husband,
             dlk has now become a truly happy place for me and i have you and all of the beautiful designers
             that we work with to thank!</p>
         </div>
