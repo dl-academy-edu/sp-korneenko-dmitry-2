@@ -1,28 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link href="style.css" rel="stylesheet" />
-    <link href="/common.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Каталог</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="catalog-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Каталог</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на странице каталога
-        </h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="/common.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="/static/fonts/oswald.css" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <title>Каталог</title>
+</head>
+
+<body>
+  @@include('header/index.html')
+  <main class="container">
+    <section class="catalog-block">
+      <h1 class="page-title catalog-title">Category Products</h1>
+      <ul class="breadcrumbs-list catalog-breadcrumbs-list">
+        <li class="breadcrumbs-item"><a href="/index.html" class="breadcrumbs-link">Home</a></li>
+        <li class="breadcrumbs-item">
+          <div class="breadcrumbs-arrow"></div>
+        </li>
+        <li class="breadcrumbs-item"><a href="#" class="breadcrumbs-link breadcrumbs-link_active">Catalog</a>
+        </li>
+      </ul>
+      <div class="catalog-list-block">
+        <ul class="category-product-list catalog-product-list">
+          <li class="category-product-item catalog-product-item"><a href="#"
+              class="category-product-link category-product-link_1">APPAREL
+              KIDS</a></li>
+          <li class="category-product-item catalog-product-item"><a href="#"
+              class="category-product-link category-product-link_2">HOLIDAY
+              SHOP</a></li>
+          <li class="category-product-item catalog-product-item"><a href="/pages/toys.html"
+              class="category-product-link category-product-link_3">TOYS</a>
+          </li>
+
+
+          <li class="category-product-item catalog-product-item"><a href="#"
+              class="category-product-link category-product-link_4">ACCESSORIES</a></li>
+          <li class="category-product-item catalog-product-item"><a href="#"
+              class="category-product-link category-product-link_5">SALE</a>
+          </li>
+          <li class="category-product-item catalog-product-item"><a href="#"
+              class="category-product-link category-product-link_6">APPAREL
+              ADULTS</a></li>
+        </ul>
       </div>
-    </main>
-    @@include('footer/index.html')
-  </body>
-  <script src="index.js"></script>
+      <div class="catalog-info-block">
+        <div class="catalog-element">
+          <h2 class="section-title catalog-info-title">Product Description</h2>
+          <div class="catalog-info">
+            <p class="catalog-info-text">Interactive doll Zapf Creation Baby Born Sister can drink from a
+              bottle
+              and almost really cry. You can even bathe her, just like a little sister.</p>
+            <p class="catalog-info-text">A toy with a height of 43 cm bends its knees, the head rotates, it
+              can
+              stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years
+              old.
+            </p>
+            <p class="catalog-info-text">The set includes a miniature set of fashionable clothes, a
+              hairbrush, a
+              bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets:
+              one
+              for the doll, the other for her young mistress.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('footer/index.html')
+</body>
+<script src="index.js"></script>
+
 </html>

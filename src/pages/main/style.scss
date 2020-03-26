@@ -1,31 +1,193 @@
-main.index-main {
-  padding: 30px 0;
+
+
+
+/*CATEGORY PRODUCTS*/
+
+
+  
+
+
+
+
+/*DELIVERY*/
+
+
+.delivery-block{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 91px;
+  
 }
 
-.parallax-card {
-  max-width: 300px;
-
-  &__wrapper-img {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 100%;
-  }
-  &__img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: none;
-    height: 100%;
-    min-width: 100.5%;
-  }
-  &__description {
-    background-color: #ff5722;
-    padding: 20px 10px;
-    text-align: center;
-    color: #fff;
-  }
-  &__paragraph {
-    margin: 0;
-  }
+.delivery-block-photo{
+  width: 480px;
+  height: 559px;
+  margin-right: 120px;
+  
+  
 }
+
+.delivery-article-block{
+  max-width: 480px;
+  transform: translateY(-2px);
+}
+
+.delivery-section-title{
+  margin-bottom: 0;
+  line-height: 47px;
+}
+
+
+.delivery-nav-list{
+  
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+
+
+
+.delivery-nav-item:nth-child(2),
+.delivery-nav-item:nth-child(3){
+  margin-top: 0px;
+}
+
+.delivery-text-block{
+  margin-top: 16px;
+  margin-bottom: 25px;
+}
+
+
+.delivery-nav-button{
+  display: block;
+  width: 326px;
+  height: 55px;
+  box-sizing: border-box;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 19px;
+  color: #1E0606;
+  border: none;
+  background-color: initial;
+  padding-right: 180px;
+  padding-left: 60px;
+  margin-left: -60px;
+  text-align: left;
+  
+
+}
+
+
+  
+
+.delivery-nav-button__checked{
+  background-color: rgba(112, 187, 220, 0.2);
+  font-weight: bold;
+}
+
+
+
+/*PARTNERS*/
+
+.partners-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 110px;
+}
+
+.partners-link{
+  display: block;
+
+}
+
+
+/*DESIGN LIFE KIDS*/
+
+
+.about-us-block{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 99px;
+}
+
+.article-block{
+  
+  background: #E1F0F7;
+  padding: 30px;
+}
+
+.dlk-article{
+  
+  background: #E1F0F7;
+  margin-right: 56px;
+  box-sizing: border-box;
+  padding-bottom: 34px;
+  margin-bottom: 50px;
+  
+  
+}
+
+.contacts-article{
+  
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 81px;
+  margin-bottom: 24px;
+  
+}
+
+.dlk-title,
+.contacts-block-title{
+  margin: 0;
+  margin-top: -55px;
+}
+
+.dlk-subtitle{
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+
+  /* identical to box height */
+
+  color: #1E0606;
+  margin-top: 13px;
+
+  
+}
+
+.dlk-info{
+  margin-top: -17px;
+  max-width: 483px;
+}
+
+.dlk-btn{
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+
+.contacts-info{
+  margin-top: 20px;
+  max-width: 483px;
+  margin-bottom: 20px;
+  
+}
+
+
+.map-block{
+  width: 483px;
+  height: 196px;
+  position: absolute;
+  background-image: url(/../../static/images/map.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+

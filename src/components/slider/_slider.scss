@@ -1,0 +1,71 @@
+.slider{
+    width: 100%;
+    min-height: 411px;
+    background-color: #EEE4DB;
+    position: relative;
+    margin-bottom: 90px;
+    &__nav{
+      position: absolute;
+      margin: 32px;
+    }
+    &__nav-button-list{
+      margin-bottom: -50px;
+    }
+    &__nav-number{
+      margin-bottom: -8px;
+    }
+    &__nav-button{
+      background-color: #D6CAC2;
+      width: 31px;
+      height: 3px;
+      border: none;
+    }
+    &__nav-button_active{
+      background-color: #725F5B;
+    }
+    &__title-block{
+      max-width: 500px;
+      z-index: 2;
+      position: absolute;
+      margin: 60px 133px;
+    }
+    &__title{
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: bold;                   
+      font-size: 40px;
+      line-height: 110%;
+      color: #1E0606;
+      margin-bottom: 10px;
+    }
+    &__subtitle{
+      font-family: 'Crimson Text', serif;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 25px;
+      color: #1E0606;
+    }
+    &__image{
+      position: absolute;
+      bottom: 38px;
+      right: 99px;
+      z-index: 0;
+    }
+    &__sub-block{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 11px 0;
+      text-align: center;
+      background-color: #C29974;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+}

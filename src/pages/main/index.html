@@ -1,43 +1,89 @@
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link href="style.css" rel="stylesheet" />
-    <link href="/common.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Главная</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="index-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Главная</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на главной странице
-        </h2>
-        <div class="parallax-card">
-          <div class="parallax-card__wrapper-img">
-            <img
-              class="parallax-card__img"
-              src="static/images/cactus.jpg"
-              alt="Картинка кактуса"
-            />
-          </div>
 
-          <div class="parallax-card__description">
-            <p class="parallax-card__paragraph">Кактус маминой подруги</p>
-            <p class="parallax-card__paragraph">
-              Не нужно поливать и никогда не сохнет
-            </p>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="/common.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="/static/fonts/oswald.css" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <title>Главная</title>
+</head>
+
+<body>
+  @@include('header/index.html')
+  <main class="container">
+    @@include('slider/index.html')
+    @@include('category-product/index.html',{
+      "title-class":"category-product__title"
+    })
+    <section class="delivery-block">
+      <img src="/../../static/images/delivery-image.jpg" alt="woman photo" class="delivery-block-photo">
+      <article class="delivery-article-block">
+        <h2 class="section-title delivery-section-title">Delivery</h2>
+        <ul class="delivery-nav-list">
+          <li class="delivery-nav-item">
+            <button class="delivery-nav-button delivery-nav-button__checked">Delivery</button>
+          </li>
+          <li class="delivery-nav-item">
+            <button class="delivery-nav-button">Guarantee</button>
+          </li>
+          <li class="delivery-nav-item">
+            <button class="delivery-nav-button">Credit</button>
+          </li>
+        </ul>
+        <div class="delivery-text-block">
+          <p class="delivery-text">Some days i feel like i've been working on dlk my entire life and there are
+            other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+          <p class="delivery-text">What started as an outlet to deal with the traumatic loss of my husband,
+            dlk has now become a truly happy place for me and i have you and all of the beautiful designers
+            that we work with to thank!</p>
         </div>
-      </div>
-    </main>
-    @@include('footer/index.html')
-  </body>
-  <script src="script.js"></script>
+        @@include('black-button/index.html',{
+          "text": "learn more"
+        })
+      </article>
+    </section>
+    <section class="partners-block">
+      <h2 class="hidden">partners</h2>
+      <ul class="partners-list">
+        <li class="partners-item"><a href="" class="partners-link"><img src="/../../static/images/mail-group.png" alt="mail group"></a>
+        </li>
+        <li class="partners-item"><a href="" class="partners-link"><img src="/../../static/images/apple.png" alt="apple"></a>
+        </li>
+        <li class="partners-item"><a href="" class="partners-link"><img src="/../../static/images/eltex.png" alt="eltex"></a>
+        </li>
+        <li class="partners-item"><a href="" class="partners-link"><img src="/../../static/images/owox.png" alt="owox"></a></li>
+      </ul>
+    </section>
+    <section class="about-us-block">
+      <article class="dlk-article article-block">
+        <h1 class="section-title dlk-title">Design Life Kids</h1>
+        <p class="dlk-subtitle">About Us</p>
+        <p class="dlk-info">Some days i feel like i've been working on dlk my entire life and there are other
+          days that i am completely shocked that four years have flown by. It's simply magical.</p>
+          @@include('black-button/index.html',{
+            "text": "buy now"
+          })
+      </article>
+      <article class="contacts-article article-block">
+        <h2 class="section-title contacts-block-title">contacts</h2>
+        <p class="contacts-info">Some days i feel like i've been working on dlk my entire life and there are other days
+          that i am completely shocked that four years have flown by. It's simply magical.</p>
+        <div class="map-block">
+
+        </div>
+      </article>
+    </section>
+  </main>
+  <section class="modal-window hidden">
+    <h2 class="hidden">feedback</h2>
+    
+    @@include('modal-form/index.html')
+  
+</section>
+  @@include('footer/index.html')
+  <script src="index.js"></script>
+</body>
+
 </html>

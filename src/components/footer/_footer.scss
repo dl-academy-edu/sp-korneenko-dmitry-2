@@ -1,22 +1,261 @@
-footer {
-  background-color: #ffd042;
-  height: 80px;
+/*FOOTER*/
+
+.footer{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px; 
+  background-color: #434343;
+  padding-top: 67px;
+  padding-bottom: 85px;
+
+    &__nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+
+   &__nav-list{
+    width: 380px;
+  }
+
+  &__nav-title{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px; 
+    color: #AAAAAA;
+  }
+
+  &__nav-list-item{
+    text-align: left;
+    margin: 15px 0;
+  }
+
+  &__nav-link{
+    color: #FFFFFF;
+  }
+
+
+  &__social-list{
+    display: flex;
+    transform: translateY(-12px);
+  
+  }
+
+  &__social-link{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #666666;
+    margin-right: 10px;
+    margin-top: 19px;
+  }
+
+  &__social-link_fb{
+    background-image: url(/../../static/images/fb.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__social-link_twtr{
+    background-image: url(/../../static/images/twitter.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__social-link_pint{
+    background-image: url(/../../static/images/Pinterest.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__social-link_inst{
+    background-image: url(/../../static/images/Instagram.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+
+}
+
+
+
+
+
+
+.footer-text_white{
+  color: #FFFFFF;
+}
+
+.footer-text_grey{
+  color: #AAAAAA;
+}
+
+
+
+
+
+
+
+
+.footer__separating-line{
+  margin-top: 22px;
+  margin-bottom: 29px;
+  background-color: #666666;
+  height: 1px;
+  border: none;
+}
+
+.footer-nav:nth-child(2),
+.footer-nav:nth-child(3){
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer-sub-block{
   display: flex;
   align-items: center;
-
-  span {
-    padding-right: 20px;
-  }
-
-  a {
-    color: #000;
-    text-decoration: none;
-
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    &:hover {
-      border-bottom: 1px solid #000;
-    }
-  }
+  flex-wrap: wrap;
+  border-top: #666666 solid 1px;
+  margin-top: -4px;
+  padding-top: 22px;
 }
+
+.footer-sub-block-copyright,
+.footer-sub-block-signature{
+  margin-left: 20px;
+}
+
+.footer-sub-block-signature{
+  color: #A2A2A2;
+}
+
+.footer-sub-block-rating>div{
+  margin-right: 27px;
+}
+
+.footer-sub-block-item{
+  width: 380px;
+}
+
+.footer-sub-block-rating{
+  display: flex;
+  align-items: center;
+}
+
+/*STARS*/
+
+
+
+
+
+
+
+
+.rating-area__list{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.rating-area__list input{
+  display: none;
+}
+
+
+.star-push{
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-image: url(/../../static/images/Star.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-right: 3px;
+  
+}
+
+
+
+
+.star-push:hover,
+.star-push:hover ~ .star-push{
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-image: url(/../../static/images/Star2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.rating-area__list > input:checked ~ .star-push{
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-image: url(/../../static/images/Star2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  color:#C29974;
+}
+
+
+
+.rating-text{
+
+  width: 130px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background: none;
+  padding-right: 20px;
+}
+
+.rating-text:hover{
+  text-decoration: none;
+  color: #C29974;
+}
+
+
+
+
+/*FOOTER-FORM*/
+
+
+.footer-form{
+  display: flex;
+  align-items: center;
+  transform: translateY(-3px);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-form-input{
+  max-width: 380px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 9px 15px;
+  background-color: #666666;
+  border: solid 3px #666666;
+  line-height: 22px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  flex-grow: 1;
+  color: #EBEBEB;
+}
+

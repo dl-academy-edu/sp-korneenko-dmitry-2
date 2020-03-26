@@ -1,0 +1,38 @@
+.modal-form{
+    position: relative;
+    max-width: 680px;
+
+  }
+  
+  .close-form-button{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -26px;
+    top: 0;
+    background-color: initial;
+    background-image: url(/../static/images/close-cross.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+  
+  
+  
+  }
+  
+  
+  .form-checkbox{
+    position: absolute;
+    opacity: 0;
+  
+  }
+  
+  
+  .form-checkbox:checked + .modal-form-checkbox_newstyle::after{
+    background-color: initial;
+  }
+  
+  .form-checkbox:focus + .form-checkbox_newstyle::before{
+    border: 3px solid #C29974;
+  }
+  
