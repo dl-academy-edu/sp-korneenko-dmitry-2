@@ -1,15 +1,37 @@
+@keyframes animation{
+  0%{
+    bottom: 38px;
+      right: -999px;
+  }
+  50%{
+    rotate: 10deg;
+    transform-origin: 100% 100%;
+  }
+  100%{
+    bottom: 38px;
+      right: 99px;
+  }
+}
+
+
+
 .slider{
     width: 100%;
     min-height: 411px;
     background-color: #EEE4DB;
     position: relative;
+    margin-top: 95px;
     margin-bottom: 90px;
+
     &__nav{
       position: absolute;
       margin: 32px;
     }
     &__nav-button-list{
-      margin-bottom: -50px;
+      margin-bottom: 0;
+    }
+    &__nav-item{
+      margin-bottom: -8px;
     }
     &__nav-number{
       margin-bottom: -8px;
@@ -51,6 +73,7 @@
       bottom: 38px;
       right: 99px;
       z-index: 0;
+      animation: animation 5s;
     }
     &__sub-block{
       position: absolute;

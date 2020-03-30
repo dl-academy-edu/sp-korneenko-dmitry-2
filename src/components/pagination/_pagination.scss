@@ -1,0 +1,39 @@
+.pagination{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__number-list{
+    display: flex;
+    align-items: center;
+  }
+  &__number-item{
+    margin: 0 25px;
+  }
+  &__button{
+    border: none;
+    background-color: initial;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #1E0606;
+  }
+  &__button-number_active{
+    color: #C29974;
+  }
+  &__button_left{
+    width: 13px;
+    height: 26px;
+    background-image: url(/../../static/images/left-arrow_grey.svg);
+    background-position: center;
+  }
+  &__button_right{
+    width: 13px;
+    height: 26px;
+    background-image: url(/../../static/images/right-arrow_grey.svg);
+    background-position: center;
+  }
+}
+

@@ -16,57 +16,72 @@
   <main class="container">
     <section class="catalog-block">
       <h1 class="page-title catalog-title">Category Products</h1>
-      <ul class="breadcrumbs-list catalog-breadcrumbs-list">
-        <li class="breadcrumbs-item"><a href="/index.html" class="breadcrumbs-link">Home</a></li>
-        <li class="breadcrumbs-item">
-          <div class="breadcrumbs-arrow"></div>
+      @@include('breadcrumbs/index.html',{
+        "second-href":"/./pages/catalog/index.html",
+        "third-href":"/./pages/toys/index.html",
+        "second-link-name":"Catalog",
+        "third-link-name":"",
+        "arrow-class":"hidden",
+        "second-link-class":"breadcrumbs__link_active"
+
+    })
+      
+      <ul class="product-catalog">
+        <li class="product-catalog__item">@@include('category-product-link/index.html',{
+          "img-name":"product-button-1.jpg",
+          "href":"#",
+          "link-name":"APPAREL KIDS"
+          })
         </li>
-        <li class="breadcrumbs-item"><a href="#" class="breadcrumbs-link breadcrumbs-link_active">Catalog</a>
+        <li class="product-catalog__item">@@include('category-product-link/index.html',{
+          "img-name":"product-button-2.jpg",
+          "href":"#",
+          "link-name":"holiday shop"
+          })
+        </li>
+        <li class="product-catalog__item">@@include('category-product-link/index.html',{
+          "img-name":"product-button-3.jpg",
+          "href":"#",
+          "link-name":"toys"
+          })
+        </li>
+        <li class="product-catalog__item">@@include('category-product-link/index.html',{
+          "img-name":"product-button-4.jpg",
+          "href":"#",
+          "link-name":"accessories"
+          })
+        </li>
+        <li class="product-catalog__item">@@include('category-product-link/index.html',{
+          "img-name":"product-button-5.jpg",
+          "href":"#",
+          "link-name":"sale"
+          })
+        </li>
+        <li class="product-catalog__item">@@include('category-product-link/index.html',{
+          "img-name":"product-button-6.jpg",
+          "href":"#",
+          "link-name":"apparel adults"
+          })
         </li>
       </ul>
-      <div class="catalog-list-block">
-        <ul class="category-product-list catalog-product-list">
-          <li class="category-product-item catalog-product-item"><a href="#"
-              class="category-product-link category-product-link_1">APPAREL
-              KIDS</a></li>
-          <li class="category-product-item catalog-product-item"><a href="#"
-              class="category-product-link category-product-link_2">HOLIDAY
-              SHOP</a></li>
-          <li class="category-product-item catalog-product-item"><a href="/pages/toys.html"
-              class="category-product-link category-product-link_3">TOYS</a>
-          </li>
-
-
-          <li class="category-product-item catalog-product-item"><a href="#"
-              class="category-product-link category-product-link_4">ACCESSORIES</a></li>
-          <li class="category-product-item catalog-product-item"><a href="#"
-              class="category-product-link category-product-link_5">SALE</a>
-          </li>
-          <li class="category-product-item catalog-product-item"><a href="#"
-              class="category-product-link category-product-link_6">APPAREL
-              ADULTS</a></li>
-        </ul>
-      </div>
-      <div class="catalog-info-block">
-        <div class="catalog-element">
-          <h2 class="section-title catalog-info-title">Product Description</h2>
+       
           <div class="catalog-info">
+            <h2 class="section-title catalog-info__title">Product Description</h2>
             <p class="catalog-info-text">Interactive doll Zapf Creation Baby Born Sister can drink from a
               bottle
               and almost really cry. You can even bathe her, just like a little sister.</p>
-            <p class="catalog-info-text">A toy with a height of 43 cm bends its knees, the head rotates, it
+            <p class="catalog-info__text">A toy with a height of 43 cm bends its knees, the head rotates, it
               can
               stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years
               old.
             </p>
-            <p class="catalog-info-text">The set includes a miniature set of fashionable clothes, a
+            <p class="catalog-info__text">The set includes a miniature set of fashionable clothes, a
               hairbrush, a
               bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets:
               one
               for the doll, the other for her young mistress.</p>
           </div>
-        </div>
-      </div>
+        
     </section>
   </main>
   @@include('footer/index.html')

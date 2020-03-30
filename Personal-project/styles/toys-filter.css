@@ -1,0 +1,263 @@
+/*TOYS FILTER*/
+
+
+.toys-filter-section{
+    background-color: rgba(125, 151, 218, 0.2);
+    padding-bottom: 15px;
+    margin-bottom: 59px;
+}
+
+
+
+.toys-filter-form{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    align-items: flex-start;
+}
+
+
+.toys-filter-form label{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.toys-form-title{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+    margin-bottom: 10px;
+}
+
+
+.filter-range-input{
+    width: 190px;
+}
+
+.toys-form-title_cost{
+    margin-bottom: 19px;
+}
+
+
+.filter-cost-block{
+    min-width: 220px;
+    width: 25.5%;
+}
+
+.filter-cost-block>label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.range-value{
+    max-width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.range-value > :nth-child(2){
+    transform: translateX(25px);
+}
+
+
+.filter-color-block{
+    min-width: 180px;
+    width: 16.9%;
+}
+
+
+
+.filter-checkbox-list{
+    transform: translateY(-6px);
+}
+
+
+.filter-checkbox-item{
+    margin-bottom: 15px;
+}
+
+
+.color-checkbox{
+    position: absolute;
+    opacity: 0;
+}
+
+
+
+.color-checkbox_newstyle{
+    position: relative;
+    margin-right: 28px;
+}
+
+.color-checkbox_newstyle::before{
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    
+    border: 2px solid #C29974;
+    box-sizing: border-box;
+    border-radius: 3px;
+    left: 0;
+    top: 2px;
+}
+
+
+.color-checkbox:focus + .color-checkbox_newstyle::before{
+    border: 3px solid #C29974;
+} 
+
+
+.color-checkbox:checked + .color-checkbox_newstyle::after{
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-color: #ffffff;
+    background-image: url(/../static/images/checked.svg);
+    background-repeat: no-repeat;
+    background-position: 2px -2px;
+    border: 2px solid #C29974;
+    box-sizing: border-box;
+    border-radius: 3px;
+    left: 0;
+    top: 2px;
+}
+
+
+
+.filter-delivery-block{
+    min-width: 150px;
+    width: 16.9%;
+}
+
+
+.filter-radio-item{
+    margin-bottom: 9px;
+}
+
+.original-radio{
+    position: absolute;
+    opacity: 0;
+}
+
+
+.new-radio-style{
+    position: relative;
+    margin-right: 30px;
+}
+
+.new-radio-style::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #C29974;
+    box-sizing: border-box;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.original-radio:focus + .new-radio-style::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #C29974;
+    box-sizing: border-box;
+    border-radius: 50%;
+    top: 50% solid #C29974;
+    transform: translateY(-50%);
+}
+
+.original-radio:checked + .new-radio-style::after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color:  #C29974;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4px;
+}
+
+ 
+.filter-amount-block{
+    min-width: 250px;
+    width: 25.4%;
+}
+
+
+
+.filter-amount-list{
+    display: flex;
+}
+
+.original-radio__amount{
+    opacity: 0;
+    position: absolute;
+}
+
+
+
+.amount-button{
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 16px;
+    line-height: 22px;
+    width: 80px;
+    height: 35px;
+    background-color: #ffffff;
+}
+
+.original-radio__amount:focus + .amount-button{
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 16px;
+    line-height: 22px;
+    width: 80px;
+    height: 35px;
+    background-color:#F3D0DB;
+    border: rgb(102, 68, 68) solid 1px;
+
+
+}
+
+
+.original-radio__amount:checked + .amount-button{
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 16px;
+    line-height: 22px;
+    width: 80px;
+    height: 35px;
+    background-color:#F3D0DB;
+}
+
+
+
+
+.filter-button-block{
+    align-self: center;
+    padding-bottom: 63px;
+    width: 10%;
+    min-width: 160px;
+}
+    

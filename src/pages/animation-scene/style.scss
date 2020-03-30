@@ -1,0 +1,133 @@
+@keyframes cloudOneMove{
+    from{
+        right: -100px;
+    }
+    to{
+        
+        right: 105%;
+    }
+}
+
+@keyframes cloudTwoMove{
+    from{
+        right: -250px;
+    }
+    to{
+        
+        right: 105%;
+    }
+}
+
+@keyframes cloudThreeMove{
+    from{
+        right: -250px;
+    }
+    to{
+        
+        right: 105%;
+    }
+}
+
+@keyframes cloudFourMove{
+    from{
+        right: -250px;
+    }
+    to{
+        
+        right: 105%;
+    }
+}
+
+@keyframes cloudFiveMove{
+    from{
+        right: -250px;
+    }
+    to{
+        
+        right: 105%;
+    }
+}
+
+@keyframes cloudSixMove{
+    from{
+        right: -250px;
+    }
+    to{
+        
+        right: 105%;
+    }
+}
+
+.animation-frame{
+    margin: 0 auto;
+}
+
+.sky{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    
+}
+
+.clouds{ 
+    position: absolute;
+}
+
+.sun-wrapper{
+    position: relative;
+}
+
+.sun{
+    position: absolute;
+    top:50px;
+    right: 172px;
+}
+
+.cloudOne{
+    animation: cloudOneMove 180s;
+    animation-iteration-count: infinite;
+    top: 63px;
+}
+
+.cloudTwo{
+    animation: cloudTwoMove 200s;
+    animation-iteration-count: infinite;
+    top: 96px;
+}
+
+.cloudThree{
+    animation: cloudThreeMove 210s;
+    animation-iteration-count: infinite;
+    top: 60px;
+}
+
+.cloudFour{
+    animation: cloudFourMove 170s;
+    animation-iteration-count: infinite;
+    top: 143px;
+}
+
+.cloudFive{
+    animation: cloudFiveMove 240s;
+    animation-iteration-count: infinite;
+    top: 96px;
+}
+
+.cloudSix{
+    animation: cloudSixMove 210s;
+    animation-iteration-count: infinite;
+    top: 92px;
+}
+
+
+.background-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.background-buildings{
+
+}

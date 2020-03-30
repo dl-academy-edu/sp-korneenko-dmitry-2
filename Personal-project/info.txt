@@ -1,0 +1,125 @@
+/*font-family
+montserrat bold
+Crimson Text bold normal
+Open Sans normal bold
+
+slider-title --------------------
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;                   
+font-size: 40px;
+line-height: 110%;
+
+/* or 44px */
+
+/* Black */
+color: #1E0606;
+
+
+italic-text--------------
+
+font-family: Crimson Text;
+font-style: italic;
+font-weight: normal;
+font-size: 20px;
+line-height: 25px;
+
+/* Black */
+color: #1E0606;
+
+
+
+italic-hover-button----------------
+
+font-family: Crimson Text;
+font-style: italic;
+font-weight: bold;
+font-size: 26px;
+line-height: 32px;
+
+/* identical to box height */
+
+/* Black */
+color: #1E0606;
+
+
+italic-button----------------------
+
+font-family: Crimson Text;
+font-style: italic;
+font-weight: normal;
+font-size: 26px;
+line-height: 32px;
+
+/* identical to box height */
+
+/* Black */
+color: #1E0606;
+
+
+
+
+
+regular-page-text------------
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+
+/* Black */
+color: #1E0606;
+
+footer-links-----------------
+grey
+white
+
+
+
+h2 --------------------------
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 38px;
+line-height: 46px;
+
+/* identical to box height */
+text-transform: uppercase;
+
+/* Black */
+color: #1E0606;
+
+
+secondary-page-title------------
+
+h1------------------------------
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 49px;
+
+/* identical to box height */
+text-transform: uppercase;
+
+/* Black */
+color: #1E0606;
+
+
+
+button-------------------------
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;

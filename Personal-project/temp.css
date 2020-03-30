@@ -1,0 +1,44 @@
+body{
+    background-color: cadetblue;
+}
+
+
+.rating-area__list input{
+    display: none;
+}
+
+
+.rating-area__list label{
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-image: url(/img/Star.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.rating-area__list label:hover,
+.rating-area__list label:hover ~ label{
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-image: url(/img/Star2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.rating-area__list > input:checked ~ label{
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-image: url(/img/Star2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+

@@ -3,12 +3,11 @@ logs
 npm-debug.log*
 
 build
+dest
 
 .idea
 
 node_modules
-
-Personal-project
 
 .npm
 yarn.lock

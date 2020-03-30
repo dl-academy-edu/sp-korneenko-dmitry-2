@@ -1,0 +1,84 @@
+/*DESIGN LIFE KIDS*/
+
+
+.about-us-block{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 99px;
+}
+
+.article-block{
+    
+    background: #E1F0F7;
+    padding: 30px;
+}
+
+.dlk-article{
+    
+    background: #E1F0F7;
+    margin-right: 56px;
+    box-sizing: border-box;
+    padding-bottom: 34px;
+    margin-bottom: 50px;
+    
+    
+}
+
+.contacts-article{
+    
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 81px;
+    margin-bottom: 24px;
+    
+}
+
+.dlk-title,
+.contacts-block-title{
+    margin: 0;
+    margin-top: -55px;
+}
+
+.dlk-subtitle{
+    font-family: Crimson Text;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+
+    /* identical to box height */
+
+    color: #1E0606;
+    margin-top: 13px;
+
+    
+}
+
+.dlk-info{
+    margin-top: -17px;
+    max-width: 483px;
+}
+
+.dlk-btn{
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.contacts-info{
+    margin-top: 20px;
+    max-width: 483px;
+    margin-bottom: 20px;
+    
+}
+
+
+.map-block{
+    width: 483px;
+    height: 196px;
+    position: absolute;
+    background-image: url(/../static/images/map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}

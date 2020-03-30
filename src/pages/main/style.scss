@@ -1,7 +1,15 @@
+.category-product{
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  &__item{
 
+  }
+}
 
-
-/*CATEGORY PRODUCTS*/
 
 
   
@@ -16,46 +24,52 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 91px;
+  &__photo{
+    width: 480px;
+    height: 559px;
+    margin-right: 120px;
+  }
+  &__article{
+    max-width: 480px;
+    transform: translateY(-2px);
+  }
+  &__article-title{
+    margin-bottom: 0;
+    line-height: 47px;
+  }
+  &__nav-list{
   
+    margin-top: 8px;
+    margin-bottom: 0px;
+  }
+  &__nav-item:nth-child(2),
+  &__nav-item:nth-child(3){
+    margin-top: 0px;
+  }
+  &__text-block{
+    margin-top: 16px;
+    margin-bottom: 25px;
+  }
+
 }
 
-.delivery-block__photo{
-  width: 480px;
-  height: 559px;
-  margin-right: 120px;
+
   
   
-}
-
-.delivery-block__article{
-  max-width: 480px;
-  transform: translateY(-2px);
-}
-
-.delivery-block__article-title{
-  margin-bottom: 0;
-  line-height: 47px;
-}
-
-
-.delivery-block__nav-list{
-  
-  margin-top: 8px;
-  margin-bottom: 0px;
-}
 
 
 
 
-.delivery-block__nav-item:nth-child(2),
-.delivery-block__nav-item:nth-child(3){
-  margin-top: 0px;
-}
 
-.delivery-block__text-block{
-  margin-top: 16px;
-  margin-bottom: 25px;
-}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -68,18 +82,22 @@
 
 /*PARTNERS*/
 
-.partners-list{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 110px;
+.partners-block{
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 110px;
+  }
+  &__link{
+    display: block;
+  }
 }
+  
 
-.partners-link{
-  display: block;
 
-}
+
 
 
 /*DESIGN LIFE KIDS*/
@@ -168,3 +186,13 @@
 }
 
 
+
+.modal-window{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(125, 151, 218, 0.8);
+  z-index: 100;
+  
+}

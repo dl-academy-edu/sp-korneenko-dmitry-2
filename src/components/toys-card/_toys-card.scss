@@ -1,0 +1,71 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 380px;
+  height: 487px;
+  box-sizing: border-box;
+  border: none;
+  background: initial;
+  &__appearing-block{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    width: 207px;
+    height: 207px;
+    opacity: 0.9;
+    margin: 82px auto;
+    background: #E5EAF8;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+  
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  &__text{
+    font-size: 14px;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 39px;
+  }
+  &__price{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+}
+
+
+
+
+
+.card:hover > .card__appearing-block,
+.card:focus > .card__appearing-block{
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.card:active > .card__appearing-block{
+  opacity: 0.6;
+}

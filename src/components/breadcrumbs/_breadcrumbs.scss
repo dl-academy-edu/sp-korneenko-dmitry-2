@@ -1,0 +1,30 @@
+/*breadcrumbs*/
+
+.breadcrumbs{
+  display: flex;
+  align-items: center;
+  &__item{
+    margin-right: 20px;
+  }
+  &__link{
+    display: block;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1E0606;
+  }
+  &__link_active{
+    opacity: 0.5;
+  }
+  &__arrow{
+    width: 8px;
+    height: 12px;
+    background-image: url(/../static/images/right-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+}

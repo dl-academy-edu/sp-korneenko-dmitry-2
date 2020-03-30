@@ -1,0 +1,30 @@
+.category-buttons{
+    &__nav{
+      display: flex;
+      align-items: center;
+      margin-top: -23px;
+      margin-bottom: 70px;
+    }
+    &__wrapper{
+      display: flex;
+    
+      margin-right: 14px;
+    }
+    &__arrow-button{
+      width: 37px;
+      height: 37px;
+      background-color: rgba(112, 187, 220, 0.2);
+      border: none;
+      background-image: url(/../../static/images/left-arrow.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 6px;
+    }
+    &__arrow-button:nth-child(2){
+      background-image: url(/../../static/images/right-arrow.svg);
+    }
+    &__text{
+      max-width: 580px;
+    }
+  }
+

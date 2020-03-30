@@ -1,0 +1,50 @@
+.checkbox-wrapper{
+  &__oldstyle{
+    position: absolute;
+    opacity: 0;
+  }
+  &__newstyle{
+    position: relative;
+    margin-right: 28px;
+  }
+  &__newstyle::before{
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #C29974;
+    box-sizing: border-box;
+    border-radius: 3px;
+    left: 0;
+    top: 2px;
+  }
+  &__oldstyle:focus + &__newstyle::before{
+    border: 3px solid #C29974;
+  } 
+  &__oldstyle:checked + &__newstyle::after{
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-color: #ffffff;
+    background-image: url(/../static/images/checked.svg);
+    background-repeat: no-repeat;
+    background-position: 2px -2px;
+    border: 2px solid #C29974;
+    box-sizing: border-box;
+    border-radius: 3px;
+    left: 0;
+    top: 2px;
+  }
+
+}
+
+.checkbox-wrapper__oldstyle:checked + .checkbox-wrapper__newstyle_form::after{
+  background-color: initial;
+}
+
+
+
+
+
+

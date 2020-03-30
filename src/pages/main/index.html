@@ -7,34 +7,56 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="/static/fonts/oswald.css" />
   <link rel="shortcut icon" href="/static/images/favicon.ico">
-  <title>Главная</title>
+  <title>main</title>
 </head>
 
 <body>
   @@include('header/index.html')
   <main class="container">
     @@include('slider/index.html')
-    @@include('category-product/index.html',{
-      "title-class":"category-product__title"
-    })
+    <a href="/../pages/catalog/index.html" class="ctegory-products__title-link">
+      <h2 class="section-title">Category Products</h2>
+    </a>
+    <ul class="category-product__list">
+      <li class="category-product__item">@@include('category-product-link/index.html',{
+        "img-name":"product-button-1.jpg",
+        "href":"#",
+        "link-name":"APPAREL KIDS"
+        })</li>
+      <li class="category-product__item">@@include('category-product-link/index.html',{
+        "img-name":"product-button-2.jpg",
+        "href":"",
+        "link-name":"HOLIDAY SHOP"})</li>
+      <li class="category-product__item">@@include('category-product-link/index.html',{
+        "img-name":"product-button-3.jpg",
+        "href":"/../pages/toys/index.html",
+        "link-name":"toys"})</li>
+      <li class="category-product__item">@@include('category-product-link/index.html',{
+        "img-name":"product-button-4.jpg",
+        "href":"",
+        "link-name":"ACCESSORIES"})</li>
+    </ul>
+    @@include('category-buttons/index.html')
+
     <section class="delivery-block">
       <img src="/../../static/images/delivery-image.jpg" alt="woman photo" class="delivery-block__photo">
       <article class="delivery-block__article">
         <h2 class="section-title delivery-block__article-title">Delivery</h2>
         <ul class="delivery-block__article-nav-list">
           <li class="delivery-block__article-nav-item">
-            @@include('delivery-nav-button',{
-              "delivery-button-text":"delivery"
+            @@include('delivery-nav-button/index.html',{
+            "delivery-button-text":"delivery",
+            "delivery-button-class":"delivery-nav-button__checked"
             })
           </li>
           <li class="delivery-block__nav-item">
-            @@include('delivery-nav-button',{
-              "delivery-button-text":"Guarantee"
+            @@include('delivery-nav-button/index.html',{
+            "delivery-button-text":"Guarantee"
             })
           </li>
           <li class="delivery-block__nav-item">
-            @@include('delivery-nav-button',{
-              "delivery-button-text":"Credit"
+            @@include('delivery-nav-button/index.html',{
+            "delivery-button-text":"Credit"
             })
           </li>
         </ul>
@@ -46,20 +68,24 @@
             that we work with to thank!</p>
         </div>
         @@include('black-button/index.html',{
-          "text": "learn more"
+        "text": "learn more"
         })
       </article>
     </section>
     <section class="partners-block">
       <h2 class="hidden">partners</h2>
-      <ul class="partners-list">
-        <li class="partners-item"><a href="" class="partners-link"><img src="/../../static/images/mail-group.png" alt="mail group"></a>
+      <ul class="partners-block__list">
+        <li class="partners-block__item"><a href="" class="partners-block__link"><img
+              src="/../../static/images/mail-group.png" alt="mail group"></a>
         </li>
-        <li class="partners-item"><a href="" class="partners-link"><img src="/../../static/images/apple.png" alt="apple"></a>
+        <li class="partners-block__item"><a href="" class="partners-block__link"><img
+              src="/../../static/images/apple.png" alt="apple"></a>
         </li>
-        <li class="partners-item"><a href="" class="partners-link"><img src="/../../static/images/eltex.png" alt="eltex"></a>
+        <li class="partners-block__item"><a href="" class="partners-block__link"><img
+              src="/../../static/images/eltex.png" alt="eltex"></a>
         </li>
-        <li class="partners-item"><a href="" class="partners-link"><img src="/../../static/images/owox.png" alt="owox"></a></li>
+        <li class="partners-block__item"><a href="" class="partners-block__link"><img
+              src="/../../static/images/owox.png" alt="owox"></a></li>
       </ul>
     </section>
     <section class="about-us-block">
@@ -68,9 +94,9 @@
         <p class="dlk-subtitle">About Us</p>
         <p class="dlk-info">Some days i feel like i've been working on dlk my entire life and there are other
           days that i am completely shocked that four years have flown by. It's simply magical.</p>
-          @@include('black-button/index.html',{
-            "text": "buy now"
-          })
+        @@include('black-button/index.html',{
+        "text": "buy now"
+        })
       </article>
       <article class="contacts-article article-block">
         <h2 class="section-title contacts-block-title">contacts</h2>
@@ -84,10 +110,12 @@
   </main>
   <section class="modal-window hidden">
     <h2 class="hidden">feedback</h2>
-    
-    @@include('modal-form/index.html')
-  
-</section>
+
+    @@include('contact-form/index.html',{
+      "class":"modal-form"
+    })
+
+  </section>
   @@include('footer/index.html')
   <script src="index.js"></script>
 </body>
