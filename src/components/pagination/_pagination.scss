@@ -19,6 +19,13 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #1E0606;
+    transition-property: opacity;
+    transition-duration: .3s;
+  }
+ 
+  &__button:hover,
+  &__button:focus{
+    opacity: 0.5;
   }
   &__button-number_active{
     color: #C29974;

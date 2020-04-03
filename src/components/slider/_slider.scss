@@ -41,6 +41,14 @@
       width: 31px;
       height: 3px;
       border: none;
+      transition-property: background-color;
+      transition-duration: .4s;
+    }
+    &__nav-button:hover{
+      background-color: #725F5B;
+    }
+    &__nav-button:focus{
+      background-color: #725F5B;
     }
     &__nav-button_active{
       background-color: #725F5B;

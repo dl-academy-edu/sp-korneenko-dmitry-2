@@ -6,6 +6,10 @@ function showModal(){
     modalWindow.classList.toggle('hidden')
 };
 
+function closeModal(){
+    modalWindow.classList.add('hidden')
+}
+
 modalButton.addEventListener ('click', function (evt) {
     evt.preventDefault(); showModal();
  });
@@ -16,5 +20,6 @@ closeModalButton.addEventListener ('click', function (evt) {
 
 
  document.addEventListener('keydown', function (e) {
-    if(e.keyCode === 27) showModal();
+    if(e.keyCode === 27) closeModal();
   }); 
+

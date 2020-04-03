@@ -7,10 +7,23 @@
     line-height: 22px;
     text-align: center;
     text-transform: uppercase;
-  
     color: #FFFFFF;
     background-color:#000000;
     border: none;
     transition-property: background-color;
     transition-duration: .3s;
+    &:hover,
+    &:focus{
+      background-color: #C29974;
+      cursor: pointer;
+    }
+    &:active{
+      background-color:  #CFAF91;
+      transition: none;
+      
+    }
+    &:disabled{
+      background-color: #C1C1C1;
+      color: #E1E1E1;;
+    }
   }

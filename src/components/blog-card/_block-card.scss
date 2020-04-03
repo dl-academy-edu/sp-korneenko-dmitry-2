@@ -1,4 +1,8 @@
-.card{
+.blog-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 380px;
   
 &__date{
@@ -10,7 +14,6 @@
   line-height: 19px;
   color: #818181;
   margin-top: 16px;
-
 }
 &__title{
   font-family: Montserrat;
@@ -21,6 +24,10 @@
   color: #1E0606;
   margin-top: 10px;
   margin-bottom: 0px;
+}
+&__title:hover,
+&__title:focus{
+  text-decoration: underline 2px;
 }
 &__text{
   font-size: 18px;

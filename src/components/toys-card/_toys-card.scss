@@ -1,4 +1,4 @@
-.card{
+.toys-card{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +29,6 @@
     text-align: center;
     text-transform: uppercase;
     color: black;
-  
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -53,6 +52,14 @@
     font-size: 16px;
     line-height: 22px;
   }
+  &:hover > &__appearing-block,
+  &:focus > &__appearing-block{
+    opacity: 0.9;
+    transition: 0.5s;
+  }
+  &:active > &__appearing-block{
+    opacity: 0.6;
+  }
 
 }
 
@@ -60,12 +67,3 @@
 
 
 
-.card:hover > .card__appearing-block,
-.card:focus > .card__appearing-block{
-  opacity: 0.9;
-  transition: 0.5s;
-}
-
-.card:active > .card__appearing-block{
-  opacity: 0.6;
-}

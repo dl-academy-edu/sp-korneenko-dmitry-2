@@ -75,7 +75,17 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-  
+  & a{
+    transition-property: opacity;
+    transition-duration: .3s;
+  }
+  & a:hover,
+  & a:focus{
+    opacity: 0.5;
+  }
+  & a:active{
+    opacity: 0.2;
+  }
 
 }
 
@@ -140,7 +150,7 @@
   color: #A2A2A2;
 }
 
-.footer-sub-block-rating>div{
+.footer-sub-block-rating > div{
   margin-right: 27px;
 }
 
@@ -258,4 +268,5 @@
   flex-grow: 1;
   color: #EBEBEB;
 }
+
 

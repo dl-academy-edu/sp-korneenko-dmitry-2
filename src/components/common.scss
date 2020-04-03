@@ -81,28 +81,11 @@ input[type="range"]:hover{
   cursor: pointer;
 }
 
-.header a{
-  transition-property: opacity;
-  transition-duration: .4s;
-}
 
 
-.header a:hover,
-.header a:focus{
-  opacity: 0.5;
-}
 
 
-.header a:active{
-  opacity: 0.2;
 
-}
-
-
-.slider__nav-button:hover,
-.slider__nav-button:focus{
-  background-color: #725F5B;
-}
 
 
 
@@ -114,47 +97,16 @@ label:focus{
 
 }
 
-.amount-button:hover{
-  text-decoration: none;
-  color: #877379;
-  background-color: #EDDEEB;
-}
 
 
 
 
-.black-button:hover,
-.black-button:focus{
-  background-color: #C29974;
-  cursor: pointer;
-}
-
-.black-button:active{
-  background-color:  #CFAF91;
-  transition: none;
-  
-}
-
-.black-button:disabled{
-  background-color: #C1C1C1;
-  color: #E1E1E1;;
-}
 
 
 
-.category-product-block__link:hover,
-.category-product-block__link:focus{
-  text-decoration: underline;
-}
 
 
-.delivery-nav-button:hover,
-.delivery-nav-button:focus{
-  background-color: rgba(112, 187, 220, 0.2);
-  font-weight: bold;
 
-  
-}
 
 
 
@@ -174,39 +126,10 @@ textarea:focus{
 
 
 
-.footer a{
-  transition-property: opacity;
-  transition-duration: .3s;
-}
-
-
-.footer a:hover,
-.footer a:focus{
-  opacity: 0.5;
-}
-
-.footer a:active{
-  opacity: 0.2;
-}
-
-
-.blog-card-link:hover,
-.blog-card-link:focus{
-  text-decoration: underline;
-}
 
 
 
 
-.toys-button:hover > .appearing-block,
-.toys-button:hover > .appearing-focus{
-  opacity: 0.9;
-  transition: 0.5s;
-}
-
-.toys-button:active > .appearing-block{
-  opacity: 0.6;
-}
 
 
 
@@ -270,7 +193,7 @@ textarea:focus{
 
 @import "./black-button/black-button";
 
-@import "./modal-form/modal-form";
+
 @import "./slider/slider";
 
 @import "./delivery-nav-button/delivery-nav-button";
@@ -289,4 +212,6 @@ textarea:focus{
 
 @import "./input-radio-squere/input-radio-squere";
 
-@import "./contact-form/contact-form"
+@import "./contact-form/contact-form";
+
+@import "./stars-rating/stars-rating"

@@ -2,9 +2,9 @@ logs
 *.log
 npm-debug.log*
 
-build
-dest
 
+dest
+build
 .idea
 
 node_modules
