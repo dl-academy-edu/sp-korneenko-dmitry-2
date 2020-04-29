@@ -2,8 +2,9 @@
     &__nav{
       display: flex;
       align-items: center;
-      margin-top: -23px;
-      margin-bottom: 70px;
+      @media screen and (max-width: 375px){
+       align-items: flex-start;
+      }
     }
     &__wrapper{
       display: flex;

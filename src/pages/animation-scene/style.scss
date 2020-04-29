@@ -112,6 +112,25 @@
   }
 }
 
+@keyframes lowRider{
+  0%, 100%{
+    transform: rotateZ(0);
+    transform-origin: 15% 100%;
+  }
+  30%{
+    transform: rotateZ(-3deg);
+    transform-origin: 15% 100%;
+  }
+  50%{
+    transform: rotateZ(0);
+    transform-origin: 15% 100%;
+  }
+  80%{
+    transform: rotateZ(-10deg);
+    transform-origin: 15% 100%;
+  }
+}
+
 @keyframes carThree{
   0%{
     left: -20%;
@@ -139,31 +158,14 @@
   }
 }
 
-@keyframes lowRider{
-  0%, 100%{
-    transform: rotateZ(0);
-    transform-origin: 15% 100%;
-  }
-  30%{
-    transform: rotateZ(-3deg);
-    transform-origin: 15% 100%;
-  }
-  50%{
-    transform: rotateZ(0);
-    transform-origin: 15% 100%;
-  }
-  80%{
-    transform: rotateZ(-10deg);
-    transform-origin: 15% 100%;
-  }
-}
+
 
 @keyframes carFour{
   0%{
     left: -15.5%;
   }
   50%{
-    left: 116%;
+    left: 115.5%;
     transform: rotateY(0);
     bottom: 0%;
     width: 15.5%;
@@ -182,6 +184,7 @@
     transform: rotateY(180deg);
     left: -15.5%;
     z-index: -1;
+    
   }
 }
 
@@ -197,7 +200,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    z-index: -1;
+    z-index: -2;
   }
   &__sky{
     position: absolute;
@@ -310,7 +313,7 @@
   position: absolute;
   right: 14%;
   top: 5%;
-  z-index: -1;
+  z-index: -3;
   animation-name: sun;
   animation-duration: 360s;
   animation-iteration-count: infinite;

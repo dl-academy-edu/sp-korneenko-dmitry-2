@@ -1,0 +1,13 @@
+.category-product-section{
+  margin-top: 90px;
+  margin-bottom: 80px;
+  &__list{
+    width: 100%;
+    display: flex;
+    overflow: auto;
+     
+  }
+  &__item{
+    margin-right: 20px;
+  }
+}

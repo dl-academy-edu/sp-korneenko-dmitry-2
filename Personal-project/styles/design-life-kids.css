@@ -1,14 +1,14 @@
 /*DESIGN LIFE KIDS*/
 
 
-.about-us-block{
+.info-section{
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 99px;
 }
 
-.article-block{
+.info-section__info-block{
     
     background: #E1F0F7;
     padding: 30px;

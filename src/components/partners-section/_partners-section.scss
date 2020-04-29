@@ -1,0 +1,29 @@
+
+.partners-section{
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 110px;
+    @media screen and (max-width: 580px){
+      flex-wrap: wrap;
+    }
+    
+  }
+  &__item{
+  }
+  &__link{
+    display: block;
+  }
+  &__img{
+    @media screen and (max-width: 1070px){
+      scale: 0.6;
+      margin: 0 -40px;
+    }
+    @media screen and (max-width: 580px){
+      scale: 0.8;
+      margin: 0;
+    }
+  }
+}
+  

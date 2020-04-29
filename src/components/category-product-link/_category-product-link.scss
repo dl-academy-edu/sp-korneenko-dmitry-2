@@ -4,6 +4,15 @@
   position: relative;
   width: 280px;
   height: 270px;
+  @media screen and (max-width: 768px){
+    width: 258px;
+    height: 249px;
+  }
+  @media screen and (max-width: 375px){
+    width: 247px;
+    height: 238px;
+  }
+
   &__link{
     position: absolute;
     width: 280px;
@@ -34,6 +43,7 @@
     position: absolute;
     z-index: 0;
     left: 0;
+    width: 100%;
   }
       
      

@@ -1,0 +1,45 @@
+<section class="delivery-section">
+    <div class="delivery-section__photo-wrapper">
+      <picture class="delivery-section__photo">
+        <source srcset="/../../static/images/delivery-image.jpg, /../../static/images/2x/delivery-image2x.jpg 2x"
+                media="(screen)">
+        <source srcset="/../../static/images/adaptive/delivery-image375.jpg"
+                media="(max-width: 580px)" >
+        <source srcset="/../../static/images/adaptive/delivery-image768.jpg"
+                media="(max-width: 1048px)">
+        <img src="/../../static/images/delivery-image.jpg" alt="woman photo">
+      </picture>  
+    </div>
+    <article class="delivery-section__article">
+      <h2 class="section-title delivery-section__article-title">Delivery</h2>
+      <ul class="delivery-section__article-nav-list">
+        <li class="delivery-section__article-nav-item">
+          @@include('delivery-nav-button/index.html',{
+          "delivery-button-text":"Delivery",
+          "delivery-button-class":"delivery-nav-button__checked"
+          })
+        </li>
+        <li class="delivery-section__nav-item">
+          @@include('delivery-nav-button/index.html',{
+          "delivery-button-text":"Guarantee"
+          })
+        </li>
+        <li class="delivery-section__nav-item">
+          @@include('delivery-nav-button/index.html',{
+          "delivery-button-text":"Credit"
+          })
+        </li>
+      </ul>
+      <div class="delivery-section__text-block">
+        <p class="delivery-section__text">Some days i feel like i've been working on dlk my entire life and there are
+          other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+        <p class="delivery-section__text">What started as an outlet to deal with the traumatic loss of my husband,
+          dlk has now become a truly happy place for me and i have you and all of the beautiful designers
+          that we work with to thank!</p>
+      </div>
+      @@include('black-button/index.html',{
+      "text": "learn more"
+      })
+    </article>
+  </section>
+

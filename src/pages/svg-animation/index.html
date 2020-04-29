@@ -1,0 +1,37 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="/common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="/static/fonts/oswald.css" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <title>SVG-animation</title>
+</head>
+
+<body>
+    @@include('header/index.html')
+    <main>
+        <div class="container">
+
+            <h1 class="page-title">svg animation</h1>
+            @@include('breadcrumbs/index.html',{
+                "second-href":"/./pages/svg-animation/index.html",
+                "second-link-name":"SVG",
+                "third-link-name":"",
+                "arrow-class":"hidden",
+                "second-link-class":"breadcrumbs__link_active"
+            })
+            <svg class="class">
+                <!--<line x1="2" x2="13" y1="2" y2="13" stroke="black" stroke-width="4"/>
+                <line x1="13" x2="2" y1="13" y2="26" stroke="black" stroke-width="4"/>-->
+                <path d="M1 1 L6.5 13" stroke="black" stroke-width="4"/>
+            </svg>
+        </div>
+        
+    </main>
+    @@include('footer/index.html')
+</body>
+
+</html>

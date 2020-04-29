@@ -1,14 +1,14 @@
 /*DELIVERY*/
 
 
-.delivery-block{
+.delivery-section{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 91px;
     
 }
 
-.delivery-block-photo{
+.delivery-section-photo{
     width: 480px;
     height: 559px;
     margin-right: 120px;
@@ -16,7 +16,7 @@
     
 }
 
-.delivery-article-block{
+.delivery-info-section__info-block{
     max-width: 480px;
     transform: translateY(-2px);
 }
