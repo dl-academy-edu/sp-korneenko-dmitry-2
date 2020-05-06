@@ -21,7 +21,7 @@ closeModalButton.addEventListener ('click', function (evt) {
  });
 
 
- document.addEventListener('keydown', function (evt) {
+ document.addEventListener('keydown', function (e) {
     if(e.keyCode === 27) closeModal();
   }); 
 

@@ -13,11 +13,11 @@
     &__nav-wrapper{
     display: flex;
     justify-content: space-between;
-   
    }
 
    &__nav-list{
-    width: 380px;
+    width: calc(100%/3);
+    overflow: hidden;
   }
 
   &__nav-title{
@@ -42,6 +42,7 @@
   &__social-list{
     display: flex;
     transform: translateY(-12px);
+    justify-content: flex-start;
   
   }
 
@@ -119,7 +120,7 @@
 
 .footer-nav:nth-child(2),
 .footer-nav:nth-child(3){
-  margin-left: 20px;
+  
 }
 
 
@@ -134,16 +135,22 @@
 
 .footer-sub-block{
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   border-top: #666666 solid 1px;
   margin-top: -4px;
   padding-top: 22px;
 }
 
+.sub-block-wrapper{
+  display: flex;
+  flex-grow: 2;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .footer-sub-block-copyright,
 .footer-sub-block-signature{
-  margin-left: 20px;
 }
 
 .footer-sub-block-signature{
@@ -155,7 +162,7 @@
 }
 
 .footer-sub-block-item{
-  width: 380px;
+  flex-grow: 1;
 }
 
 .footer-sub-block-rating{
@@ -248,13 +255,14 @@
 .footer-form{
   display: flex;
   align-items: center;
-  transform: translateY(-3px);
-  justify-content: space-between;
+  
+
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .footer-form-input{
-  max-width: 380px;
+  
   height: 40px;
   box-sizing: border-box;
   padding: 9px 15px;
@@ -265,7 +273,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  flex-grow: 1;
+
   color: #EBEBEB;
 }
 

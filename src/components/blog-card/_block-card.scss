@@ -3,8 +3,30 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 380px;
-  
+  max-width: 380px;
+  @media screen and (max-width: 768px){
+    max-width: 314px;
+  }
+  @media screen and (max-width: 375px){
+    max-width: 335px;
+  }
+
+&__img-wrapper{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 60%;
+}
+
+& img{
+  position: absolute;
+  min-width: 100.5%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
 &__date{
   display: block;
   font-family: Roboto;
