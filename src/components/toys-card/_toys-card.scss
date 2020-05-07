@@ -3,22 +3,35 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 380px;
-  height: 487px;
+  max-width: 380px;
+  padding-bottom: 30%;
   box-sizing: border-box;
   border: none;
   background: initial;
+  @media screen and (max-width:768px){
+    max-width: 203px;
+    padding-bottom: 85px;
+  }
+  @media screen and (max-width:768px){
+    max-width: 203px;
+    padding-bottom: 75px;
+  }
+ 
+
+  & img{
+    width: 100%;
+  }
+
   &__appearing-block{
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    box-sizing: border-box;
-    width: 207px;
-    height: 207px;
+    width: 60%;
+    padding: 25% 0;
     opacity: 0.9;
-    margin: 82px auto;
+    
     background: #E5EAF8;
     text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
     font-family: Montserrat;
@@ -30,9 +43,17 @@
     text-transform: uppercase;
     color: black;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -65%);
     opacity: 0;
     transition: 0.5s;
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+      padding: 15% 0;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 17px;
+    }
   }
   &__text{
     font-size: 14px;
