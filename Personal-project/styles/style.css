@@ -131,8 +131,8 @@ label:focus{
 
 
 
-.category-product-link:hover,
-.category-product-link:focus{
+.grid-container__link:hover,
+.grid-container__link:focus{
     text-decoration: underline;
 }
 
