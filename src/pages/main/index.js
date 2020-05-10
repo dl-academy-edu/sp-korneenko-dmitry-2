@@ -22,7 +22,7 @@ closeModalButton.addEventListener ('click', function (evt) {
 
 
  document.addEventListener('keydown', function (evt) {
-    if(e.keyCode === 27) {
+    if(evt.keyCode === 27) {
         closeModal()}
   }); 
 
@@ -50,5 +50,8 @@ headerMenuCloseButton.addEventListener('click', function (evt) {
     evt.preventDefault(); closeHeaderModal();
 })
 
-
+document.addEventListener('keydown', function (evt) {
+    if(evt.keyCode === 27) {
+        closeHeaderModal()}
+  });
 
