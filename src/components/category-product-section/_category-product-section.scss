@@ -1,6 +1,5 @@
 .category-product-section{
-  margin-top: 90px;
-  margin-bottom: 80px;
+ 
   &__list{
     width: 100%;
     display: flex;
@@ -8,7 +7,13 @@
      
   }
   &__item{
-    width: 260px;
+    min-width: 280px;
     margin-right: 20px;
+    @media (max-width: 768px) {
+      min-width: 258px;
+    }
+    @media (max-width: 375px) {
+      min-width: 247px;
+    }
   }
 }

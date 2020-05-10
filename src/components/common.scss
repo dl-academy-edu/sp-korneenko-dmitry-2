@@ -7,6 +7,21 @@
 
 
 
+@mixin sectionPadding() {
+  padding: 45px 0;
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
+  @media (max-width: 375px) {
+    padding: 40px 0;
+  }
+}
+ 
+section{
+  @include sectionPadding();
+}
+  
+
 body{
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -204,9 +219,7 @@ textarea:focus{
 
 
 
-.hidden {
-  display: none;
-}
+
 
 
 @import "./header/header";

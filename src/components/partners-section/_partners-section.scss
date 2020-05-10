@@ -2,6 +2,7 @@
 .partners-section{
   &__list{
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 110px;
     @media screen and (max-width: 648px) {
