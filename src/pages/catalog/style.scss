@@ -14,7 +14,13 @@
     }
     
     &__item{
-
+        max-width: 280px;
+        @media (max-width: 768px) {
+            max-width: 203px;
+        }
+        @media (max-width: 375px) {
+            max-width: 143px;
+        }
     }
     &__item:nth-child(1){
         grid-column: 1/4;

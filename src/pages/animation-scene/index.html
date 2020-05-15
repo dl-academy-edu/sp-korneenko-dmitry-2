@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    @@include('header/index.html')
     <main>
         <div class="container">
+            @@include('header/index.html')
 
             <h1 class="page-title">Animation scene</h1>
             @@include('breadcrumbs/index.html',{
@@ -24,7 +24,7 @@
                 "second-link-class":"breadcrumbs__link_active"
             })
         </div>
-        <section class="animation-frame">
+        <div class="animation-frame">
             <h2 class="hidden">animation</h2>
             <img src="/../static/images/animation/sky/sun.svg" alt="" class="sun">
             <img src="/../static/images/animation/sky/Frame 1.svg" alt="" class="animation-frame__sky">
@@ -111,9 +111,18 @@
             <img src="/../static/images/animation/lantern.svg" alt="" class="lantern">
             <div class="sunset"></div>
 
-        </section>
+        </div>
     </main>
     @@include('footer/index.html')
+    <script src="../../index.js"></script>
+    <section class="modal-window hidden">
+        <h2 class="hidden">feedback</h2>
+    
+        @@include('contact-form/index.html',{
+          "class":"modal-form"
+        })
+    
+      </section>
 </body>
 
 </html>

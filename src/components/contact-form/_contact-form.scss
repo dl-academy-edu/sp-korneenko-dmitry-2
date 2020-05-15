@@ -23,15 +23,21 @@
 
 .double-input-block{
   display: flex;
-  flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-between;
+  @media (max-width: 716px) {
+    flex-wrap: wrap;
+  }
 }
 
 
 
+
 .input-block:nth-child(1){
-  //margin-right: 20px;
+  margin-right: 20px;
+  @media (max-width: 716px) {
+    margin-right: 0;
+  }
 }
 
 .input-block{
