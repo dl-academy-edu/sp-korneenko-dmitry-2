@@ -5,7 +5,7 @@ let modalWindow = document.querySelector('.modal-window');
 let closeModalButton = document.querySelector('.close-form-button');
 
 function showModal(){
-    modalWindow.classList.toggle('hidden')
+    modalWindow.classList.remove('hidden')
 };
 
 function closeModal(){
