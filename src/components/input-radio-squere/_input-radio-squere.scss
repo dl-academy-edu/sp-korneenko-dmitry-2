@@ -1,0 +1,46 @@
+.squere-radio{
+  &__old-style{
+    position: absolute;
+    opacity: 0;
+  }
+  &__new-style{
+    display: block;
+    max-width: 80px;
+    background-color: #ffffff;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #1E0606;
+    padding: 7px 20px 6px 20px;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: .4s;
+    
+  }
+  &__old-style:checked + &__new-style{
+    display: block;
+    padding: 7px 20px 6px 20px;
+    background-color: #F3D0DB;
+    text-align: center;
+    transition-duration: 0;
+  }
+  &__new-style:hover{
+    text-decoration: none;
+    text-decoration: none;
+    color: #877379;
+    background-color: #EDDEEB;
+    
+  }
+  &__old-style:focus + &__new-style{
+    text-decoration: none;
+    text-decoration: none;
+    color: #877379;
+    background-color: #EDDEEB;
+    border: solid 1px #744646;
+    
+  }
+}
+
+
+

@@ -1,0 +1,19 @@
+.category-product-section{
+ 
+  &__list{
+    width: 100%;
+    display: flex;
+    overflow: auto;
+     
+  }
+  &__item{
+    min-width: 280px;
+    margin-right: 20px;
+    @media (max-width: 768px) {
+      min-width: 258px;
+    }
+    @media (max-width: 375px) {
+      min-width: 247px;
+    }
+  }
+}

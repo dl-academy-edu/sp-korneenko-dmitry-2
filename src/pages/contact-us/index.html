@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="/common.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="/static/fonts/oswald.css" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <title>contact us</title>
+</head>
+
+<body>
+    <main class="container">
+    @@include('header/index.html')
+        <section class="contact-us-block">
+            <pre><h1 class="page-title contact-us-title">contact  us</h1></pre>
+            @@include('breadcrumbs/index.html',{
+                "second-href":"",
+                "second-link-class":"breadcrumbs__link_active",
+                "second-link-name":"Contact Us",
+                "arrow-class":"hidden",
+                "third-link-name":""
+            })
+            <div class="contact-us-wrapper">
+                
+                @@include('contact-form/index.html')
+                <div class="contact-us-info-block">
+                    <p class="contact-us-info-text ">
+                        Our support team are on-hand to assist with any issues you are experiencing.
+                    </p>
+                    <p class="contact-us-info-text">
+                        Please use the form to contact us with your needs. Send us a message and we'll respond as soon
+                        as possible.
+                    </p>
+                    <p class="contact-us-info-text contact-us-info-text_big">An expert is waiting to help you!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('footer/index.html')
+    <script src="/../index.js"></script>
+</body>
+
+</html>

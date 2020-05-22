@@ -1,0 +1,73 @@
+
+
+
+
+
+.star-rating{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  & > input{
+    display: none;
+  }
+  &__star{
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-image: url(/../../static/images/Star.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 3px;
+    
+  }
+  &__star:hover,
+  &__star:hover ~ &__star{
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-image: url(/../../static/images/Star2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  & > input:checked ~ &__star{
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-image: url(/../../static/images/Star2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color:#C29974;
+  }
+  &__text{
+
+    width: 130px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    background: none;
+    padding-right: 20px;
+  }
+  &__text:hover{
+    text-decoration: none;
+    color: #C29974;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

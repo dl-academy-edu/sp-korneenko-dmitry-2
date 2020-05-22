@@ -1,0 +1,129 @@
+.slider{
+    width: 100%;
+    min-height: 411px;
+    background-color: #EEE4DB;
+    position: relative;
+    margin-top: 100px;
+    box-sizing: border-box;
+    @media screen and (max-width: 768px) {
+        margin: 0;
+      }
+  
+    @media screen and (max-width: 375px) {
+     
+    
+      left: 50%;
+      transform: translateX(-50%);
+      width: 125%;
+      overflow: hidden;
+      margin: 0;
+     
+     
+    }
+
+    &__nav{
+      position: absolute;
+      left:32px;
+      top: 32px;
+      z-index: 5;
+      @media screen and (max-width: 768px) {
+        left: 0; 
+      }
+      @media screen and (max-width: 375px) {
+        left: initial;
+        right: 0; 
+      }
+    }
+    &__nav-button-list{
+      margin-bottom: 0;
+      @media screen and (max-width: 375px) {
+        position: absolute;
+        right: 10%; 
+      }
+    }
+    &__nav-item{
+      margin-bottom: -8px;
+    }
+    &__nav-number{
+      margin-bottom: -8px;
+    }
+    &__nav-button{
+      background-color: #D6CAC2;
+      width: 31px;
+      height: 3px;
+      border: none;
+      transition-property: background-color;
+      transition-duration: .4s;
+    }
+    &__nav-button:hover{
+      background-color: #725F5B;
+      cursor: pointer;
+    }
+    &__nav-button:focus{
+      background-color: #725F5B;
+    }
+    &__nav-button_active{
+      background-color: #725F5B;
+    }
+    &__title-block{
+      max-width: 500px;
+      z-index: 2;
+      position: absolute;
+      top: 14.5%;
+      left: 11%;
+    }
+    &__title{
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: bold;                   
+      font-size: 40px;
+      line-height: 110%;
+      color: #1E0606;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      @media screen and (max-width: 375px) {
+        line-height: 100%;
+        font-size: 36px; 
+        margin-bottom: 15px;
+      }
+    }
+    &__subtitle{
+      font-family: 'Crimson Text', serif;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 25px;
+      color: #1E0606;
+    }
+    &__image{
+      position: absolute;
+      height: 40vw;
+      max-height: 110%;
+      min-height: 40%;
+      bottom: 38px;
+      right: 10%;
+      z-index: 0; 
+      @media screen and (max-width: 768px) {
+        right: 2%;
+      }   
+       @media screen and (max-width: 375px) {
+        bottom: 53px;
+      }
+    }
+    &__sub-block{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 11px 0;
+      text-align: center;
+      background-color: #C29974;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+}

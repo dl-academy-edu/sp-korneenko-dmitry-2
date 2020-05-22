@@ -1,0 +1,141 @@
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: center;
+  width: 100%;
+  padding: 26px 0;
+  
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+    align-items: center;
+    max-width:  768px;
+  }
+   @media screen and (max-width: 375px) {
+        padding: 40px 0;
+      }
+  
+  
+  &__logo{
+    @media screen and (max-width: 768px){
+      max-width: 62px;
+    }
+    @media screen and (max-width: 375px) {
+      max-width: 42px;
+      }
+  }
+  
+  &__menu-link_js{
+    display: none;
+    @media screen and (max-width: 768px){
+      display: block;
+      margin-right: 20px;
+    }
+  }
+
+  &__nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    flex-grow: .8;
+    @media screen and (max-width: 768px){
+      flex-grow: initial;
+    }
+    
+  }
+
+  &__nav-list{
+      display: flex;
+    flex-wrap: wrap;
+    justify-content:  center;
+    }
+  &__nav-wrapper ul:nth-child(1),
+  &__nav-wrapper li:nth-last-child(1){
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__nav-list-item{
+    margin-left: 20px;
+  }
+  
+  &__nav-link{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #1E0606;
+  }
+
+  &__nav-link_bold{
+    font-weight: bold;
+    }
+
+    &__nav-link-lens{
+      transform: translateY(2px);
+      transform: translateX(-5px);
+    }
+    & a{
+      transition-property: opacity;
+      transition-duration: .4s;
+    }
+    & a:hover,
+    & a:focus{
+      opacity: 0.5;
+    }
+    & a:active{
+      opacity: 0.2;
+    }
+   &__modal-menu_js{
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     top: 0;
+     z-index: 10;
+     width: 100%;
+     background-color: white;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+     padding: 30px;
+     box-sizing: border-box;
+     
+   }
+   &__modal-menu-nav-list{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0;
+   }
+   &__modal-menu-nav-item{
+     padding: 10px 0;
+   }
+}
+
+
+.hidden{
+  display: none;
+}
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+

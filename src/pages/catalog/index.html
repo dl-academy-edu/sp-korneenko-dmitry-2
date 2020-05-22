@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="/common.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="/static/fonts/oswald.css" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <title>Каталог</title>
+</head>
+
+<body>
+  <audio autoplay>
+    <source src="/../static/images/audio/Kyle Dixon and Michael Stein - Stranger Things Main Theme Extended.mp3">
+  </audio> 
+  <main class="container">
+  @@include('header/index.html')
+    <section class="catalog-block">
+      <h1 class="page-title catalog-title">Category Products</h1>
+      @@include('breadcrumbs/index.html',{
+        "second-href":"/./pages/catalog/index.html",
+        "third-href":"/./pages/toys/index.html",
+        "second-link-name":"Catalog",
+        "third-link-name":"",
+        "arrow-class":"hidden",
+        "second-link-class":"breadcrumbs__link_active"
+
+    })
+      
+      <ul class="product-catalog">
+        <li class="product-catalog__item">@@include('category-product-link/index.html',{
+          "img-name":"product-button-1.jpg",
+          "href":"#",
+          "link-name":"APPAREL KIDS"
+          })
+        </li>
+        <li class="product-catalog__item">@@include('category-product-link/index.html',{
+          "img-name":"product-button-2.jpg",
+          "href":"#",
+          "link-name":"holiday shop"
+          })
+        </li>
+        <li class="product-catalog__item">@@include('category-product-link/index.html',{
+          "img-name":"product-button-3.jpg",
+          "href":"#",
+          "link-name":"toys"
+          })
+        </li>
+        <li class="product-catalog__item">@@include('category-product-link/index.html',{
+          "img-name":"product-button-4.jpg",
+          "href":"#",
+          "link-name":"accessories"
+          })
+        </li>
+        <li class="product-catalog__item">@@include('category-product-link/index.html',{
+          "img-name":"product-button-5.jpg",
+          "href":"#",
+          "link-name":"sale"
+          })
+        </li>
+        <li class="product-catalog__item">@@include('category-product-link/index.html',{
+          "img-name":"product-button-6.jpg",
+          "href":"#",
+          "link-name":"apparel adults"
+          })
+        </li>
+      </ul>
+        <div class="info-wrapper">
+          <div class="catalog-info">
+            <h2 class="section-title catalog-info__title">Product Description</h2>
+            <p class="catalog-info-text">Interactive doll Zapf Creation Baby Born Sister can drink from a
+              bottle
+              and almost really cry. You can even bathe her, just like a little sister.</p>
+            <p class="catalog-info__text">A toy with a height of 43 cm bends its knees, the head rotates, it
+              can
+              stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years
+              old.
+            </p>
+            <p class="catalog-info__text">The set includes a miniature set of fashionable clothes, a
+              hairbrush, a
+              bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets:
+              one
+              for the doll, the other for her young mistress.</p>
+          </div>
+        </div>
+    </section>
+  </main>
+  @@include('footer/index.html')
+</body>
+<script src="/../index.js"></script>
+
+</html>

@@ -1,0 +1,112 @@
+/*TOYS*/
+
+
+.toys-page-title{
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.toys-page-block{
+  margin-bottom: 47px;
+}
+
+
+
+
+
+.toys-catalog{
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media screen and (max-width: 555px){
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__item{
+    margin-bottom: 30px;
+}
+}
+
+
+.toys-filter{
+    background-color: rgba(125, 151, 218, 0.2);
+    padding-bottom: 15px;
+    margin-bottom: 59px;
+    margin-top: 50px;
+    &__form{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        align-items: flex-start;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1E0606;
+    }
+    &__block-title{
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1E0606;
+        margin-bottom: 10px;
+    }
+    &__cost-block{
+      min-width: 220px;
+      width: 25.5%;
+    }
+    &__cost-block>label{
+      display: block;
+      margin-bottom: 5px;
+    }
+    &__range-input{
+      width: 190px;
+    }
+    &__range-value{
+      max-width: 180px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__range-value > :nth-child(2){
+      transform: translateX(25px);
+    }
+    &__color-block{
+      min-width: 180px;
+      width: 16.9%;
+    }
+    &__checkbox-list{
+      transform: translateY(-6px);
+    }
+    &__checkbox-item{
+      margin-bottom: 15px;
+    }
+    &__delivery-section{
+      min-width: 150px;
+      width: 16.9%;
+    }
+    &__radio-item{
+      margin-bottom: 9px;
+    }
+    &__amount-block{
+  
+      width: 25.4%;
+    }
+    &__amount-list{
+      display: flex;
+    }
+    &__button-block{
+      align-self: center;
+      padding-bottom: 63px;
+      width: 10%;
+      min-width: 160px;
+    }
+    
+  }
+  
+  
+  
+  

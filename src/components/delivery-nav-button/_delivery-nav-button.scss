@@ -1,0 +1,42 @@
+.delivery-nav-button{
+    display: block;
+    max-width: 326px;
+    height: 55px;
+    box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 19px;
+    color: #1E0606;
+    border: none;
+    background-color: initial;
+    padding-right: 180px;
+    padding-left: 60px;
+    margin-left: -60px;
+    text-align: left;
+    @media screen and(max-width: 768px) {
+      font-size: 24px;
+      line-height: 30px;
+      padding-right: 167px;
+      padding-left: 20px;
+      margin-left: -20px;
+    }
+    &:hover,
+    &:focus{
+    background-color: rgba(112, 187, 220, 0.2);
+    font-weight: bold;
+     
+    }
+    
+  
+  }
+  
+  .delivery-nav-button__checked{
+    background-color: rgba(112, 187, 220, 0.2);
+    font-weight: bold;
+    @media screen and(max-width: 768px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }

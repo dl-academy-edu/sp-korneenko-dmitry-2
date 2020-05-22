@@ -1,0 +1,38 @@
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="/static/fonts/oswald.css" />
+  <link href="/common.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <title>main</title>
+</head>
+
+<body>
+  <audio autoplay loops>
+    <source src="/../static/images/audio/shopMusic.mp3">
+  </audio>
+  <main class="container">
+    @@include('header/index.html')
+    @@include('slider/index.html')
+    @@include('category-product-section/index.html')
+    @@include('delivery-section/index.html')
+    @@include('partners-section/index.html')
+    
+    @@include('dlk-info-section/index.html')
+  </main>
+  <section class="modal-window hidden">
+    <h2 class="hidden">feedback</h2>
+
+    @@include('contact-form/index.html',{
+      "class":"modal-form"
+    })
+
+  </section>
+  @@include('footer/index.html')
+  <script src="index.js"></script>
+</body>
+
+</html>
